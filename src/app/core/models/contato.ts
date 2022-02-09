@@ -1,5 +1,5 @@
 export class Contato {
     nome!: string;
-    idade!: number;
+    idade!: string;
     email!: string;
 }

@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   addContato(): void {
     const contato: Contato = {
       nome: 'Marcos Paulo',
-      idade: 30,
+      idade: '30',
       email: 'marcos@gamil.com'
     };
 
