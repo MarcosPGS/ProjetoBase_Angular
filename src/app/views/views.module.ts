@@ -14,6 +14,7 @@ import { ContatoComponent } from './contato/contato.component';
   imports: [
     CommonModule,
     ViewsRoutingModule
-  ]
+  ],
+  exports:[HomeComponent, ContatoComponent]
 })
 export class ViewsModule { }

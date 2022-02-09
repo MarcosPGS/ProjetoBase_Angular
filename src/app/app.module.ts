@@ -8,13 +8,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
+import { ViewsModule } from './views/views.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-  BrowserModule,
+BrowserModule,
     // Angular
     AppRoutingModule,
     BrowserModule,
@@ -26,6 +27,7 @@ import { CoreModule } from './core/core.module';
 
     //Modulos
     CoreModule,
+    ViewsModule
 
 
   ],
