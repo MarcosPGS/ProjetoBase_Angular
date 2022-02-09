@@ -1,3 +1,3 @@
 export class Data {
-  objetoTeste: {} = {};
+  contato: {} = {};
 }

@@ -11,7 +11,7 @@ export class StoreService extends Store<Data>{
     super(new Data());
   }
 
-  addObjetoTeste(data: any): void {
-    this.setState({...this.state, objetoTeste: data});
+  addContato(data: any): void {
+    this.setState({...this.state, contato: data});
   }
 }
