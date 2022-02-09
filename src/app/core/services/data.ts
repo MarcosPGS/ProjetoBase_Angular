@@ -1,3 +1,5 @@
+import { Contato } from "../models/contato";
+
 export class Data {
-  contato: {} = {};
+  contato: Contato = new Contato();
 }
