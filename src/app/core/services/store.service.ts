@@ -12,7 +12,7 @@ export class StoreService extends Store<Data>{
     super(new Data());
   }
 
-  addContato(data: Contato): void {
+  addContato(data: Contato[]): void {
     this.setState({...this.state, contato: data});
   }
 }

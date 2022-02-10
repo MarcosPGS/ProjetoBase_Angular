@@ -9,7 +9,7 @@ import { Contato } from 'src/app/core/models/contato';
   styleUrls: ['./contato.component.scss']
 })
 export class ContatoComponent implements OnInit {
-contato: Contato = new Contato();
+contatos: Contato[] = [];
   constructor(private storeService: StoreService) { }
 
   ngOnInit(): void {
@@ -23,7 +23,7 @@ contato: Contato = new Contato();
       pluck('contato'),
       filter(data => data !== null)
     ).subscribe( data => {
-      this.contato = data;
+      this.contatos = data;
       
     });
   }

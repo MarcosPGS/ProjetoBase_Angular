@@ -2,9 +2,17 @@
     <h3>Componente CONTATO</h3>
 </div>
 
-<div>
-    <h3>Dados do State</h3>
-    <p>Nome: {{contato.nome}}</p>
-    <p>Idade: {{contato.idade}}</p>
-    <p>E-mail: {{contato.email}}</p>
-</div>
+<body>
+    
+    <main class="cards" *ngFor="let contato of contatos">
+        <section class="card contact">
+            <div class="icon">
+                <img src="./../../../assets/img/contato.png" alt="Contact us.">
+            </div>
+            <h3>{{contato.nome}}</h3>
+            <span><Strong>E-mail: </Strong>{{contato.email}}</span>
+            <button>Contactar</button>
+        </section>
+
+    </main>
+</body>

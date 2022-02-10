@@ -16,11 +16,21 @@ export class HomeComponent implements OnInit {
   }
 
   addContato(): void {
-    const contato: Contato = {
+    const contato: Contato[] = [{
       nome: 'Marcos Paulo',
       idade: '30',
       email: 'marcos@gamil.com'
-    };
+    },
+    {
+      nome: 'Pedro Paulo',
+      idade: '29',
+      email: 'pedro@gamil.com'
+    },
+    {
+      nome: 'Gabriel Silva',
+      idade: '26',
+      email: 'gabriel@gamil.com'
+    }];
 
     // ADD contato no state
     this.storeService.addContato(contato);
